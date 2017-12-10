@@ -1,9 +1,9 @@
-set(TARGET_NAME driver_gvr)
+set(TARGET_NAME driver_googlevr)
 
 add_library(${TARGET_NAME} SHARED
   driverlog.cpp
   driverlog.h
-  driver_gvr.cpp
+  driver_googlevr.cpp
 )
 
 add_definitions(-DDRIVER_GVR_EXPORTS)
