@@ -1,5 +1,5 @@
 {
-   "driver_gvr" : {
+   "driver_googlevr" : {
       "enable" : true,
       "serialNumber" : "1234",
       "modelNumber" : "SampleModel 1",
