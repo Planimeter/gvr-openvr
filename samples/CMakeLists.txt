@@ -241,6 +241,7 @@ endif()
 # -----------------------------------------------------------------------------
 ## SUBDIRECTORIES ##
 
+add_subdirectory(driver_gvr)
 add_subdirectory(driver_sample)
 add_subdirectory(hellovr_opengl)
 if(NOT (${CMAKE_SYSTEM_NAME} MATCHES "Darwin"))
