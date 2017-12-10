@@ -172,13 +172,13 @@ public:
 		m_flSecondsFromVsyncToPhotons = vr::VRSettings()->GetFloat( k_pch_GVR_Section, k_pch_GVR_SecondsFromVsyncToPhotons_Float );
 		m_flDisplayFrequency = vr::VRSettings()->GetFloat( k_pch_GVR_Section, k_pch_GVR_DisplayFrequency_Float );
 
-		DriverLog( "driver_null: Serial Number: %s\n", m_sSerialNumber.c_str() );
-		DriverLog( "driver_null: Model Number: %s\n", m_sModelNumber.c_str() );
-		DriverLog( "driver_null: Window: %d %d %d %d\n", m_nWindowX, m_nWindowY, m_nWindowWidth, m_nWindowHeight );
-		DriverLog( "driver_null: Render Target: %d %d\n", m_nRenderWidth, m_nRenderHeight );
-		DriverLog( "driver_null: Seconds from Vsync to Photons: %f\n", m_flSecondsFromVsyncToPhotons );
-		DriverLog( "driver_null: Display Frequency: %f\n", m_flDisplayFrequency );
-		DriverLog( "driver_null: IPD: %f\n", m_flIPD );
+		DriverLog( "driver_googlevr: Serial Number: %s\n", m_sSerialNumber.c_str() );
+		DriverLog( "driver_googlevr: Model Number: %s\n", m_sModelNumber.c_str() );
+		DriverLog( "driver_googlevr: Window: %d %d %d %d\n", m_nWindowX, m_nWindowY, m_nWindowWidth, m_nWindowHeight );
+		DriverLog( "driver_googlevr: Render Target: %d %d\n", m_nRenderWidth, m_nRenderHeight );
+		DriverLog( "driver_googlevr: Seconds from Vsync to Photons: %f\n", m_flSecondsFromVsyncToPhotons );
+		DriverLog( "driver_googlevr: Display Frequency: %f\n", m_flDisplayFrequency );
+		DriverLog( "driver_googlevr: IPD: %f\n", m_flIPD );
 	}
 
 	virtual ~CGVRDeviceDriver()
