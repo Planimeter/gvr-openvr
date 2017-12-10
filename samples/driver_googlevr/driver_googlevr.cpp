@@ -83,7 +83,7 @@ private:
 	std::thread *m_pWatchdogThread;
 };
 
-CWatchdogDriver_GVR g_watchdogDriverNull;
+CWatchdogDriver_GVR g_watchdogDriverGVR;
 
 
 bool g_bExiting = false;
@@ -409,7 +409,7 @@ private:
 	bool m_bEnableNullDriver;
 };
 
-CServerDriver_GVR g_serverDriverNull;
+CServerDriver_GVR g_serverDriverGVR;
 
 
 EVRInitError CServerDriver_GVR::Init( vr::IVRDriverContext *pDriverContext )
@@ -445,11 +445,11 @@ HMD_DLL_EXPORT void *HmdDriverFactory( const char *pInterfaceName, int *pReturnC
 {
 	if( 0 == strcmp( IServerTrackedDeviceProvider_Version, pInterfaceName ) )
 	{
-		return &g_serverDriverNull;
+		return &g_serverDriverGVR;
 	}
 	if( 0 == strcmp( IVRWatchdogProvider_Version, pInterfaceName ) )
 	{
-		return &g_watchdogDriverNull;
+		return &g_watchdogDriverGVR;
 	}
 
 	if( pReturnCode )
