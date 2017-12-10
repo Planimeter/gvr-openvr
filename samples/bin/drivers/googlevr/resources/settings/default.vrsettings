@@ -5,10 +5,10 @@
       "modelNumber" : "SampleModel 1",
       "windowX" : 20,
       "windowY" : 20,
-      "windowWidth" : 800,
-      "windowHeight" : 600,
-      "renderWidth" : 400,
-      "renderHeight" : 300,
+      "windowWidth" : 1334,
+      "windowHeight" : 750,
+      "renderWidth" : 667,
+      "renderHeight" : 375,
       "secondsFromVsyncToPhotons" : 0.011,
       "displayFrequency" : 0
    }
