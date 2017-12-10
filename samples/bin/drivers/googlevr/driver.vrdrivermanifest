@@ -1,0 +1,11 @@
+{
+	"alwaysActivate": false,
+	"name" : "googlevr",
+	"directory" : "",
+	"resourceOnly" : false,
+
+	"hmd_presence" :
+	[
+		"*.*"
+	]
+}
